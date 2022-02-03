@@ -1,31 +1,34 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Navbar from "../components/Navbar"
 
 const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
-  </Layout>
+  <div>
+    <Helmet>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
+    <Navbar />
+    <div className="home grid grid-cols-2 h-screen">
+      <div className="text flex justify-start items-center p-4">
+        <h1 className="text-6xl font-bold font-playfair tracking-tighter">
+          Descubre tu nuevo accesorio favorito
+        </h1>
+      </div>
+        <div className="image">
+          <img
+            src="/necklace.jpeg"
+            className="object-cover"
+            alt=""
+          />
+        </div>
+    </div>
+  </div>
 )
 
 export default IndexPage

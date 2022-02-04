@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 
+import { StaticImage } from "gatsby-plugin-image"
+
 import Navbar from "../components/Navbar"
 
 const IndexPage = () => (
@@ -20,13 +22,9 @@ const IndexPage = () => (
           Descubre tu nuevo accesorio favorito
         </h1>
       </div>
-        <div className="image">
-          <img
-            src="/necklace.jpeg"
-            className="object-cover"
-            alt=""
-          />
-        </div>
+      <div className="image">
+        <StaticImage src="../images/necklace.jpeg" className="object-cover" alt="" />
+      </div>
     </div>
   </div>
 )

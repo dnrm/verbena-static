@@ -22,9 +22,16 @@ const IndexPage = () => (
           Descubre tu nuevo accesorio favorito
         </h1>
         <h2 className="font-raleway text-3xl">Nueva colección</h2>
+        <button className="py-3 rounded-xl my-2 px-6 bg-gold text-white font-raleway">
+          Ir al catálogo
+        </button>
       </div>
       <div className="image relative order-1 md:order-2">
-        <StaticImage src="../images/necklace.jpeg" className="object-cover h-48 md:h-[50rem]" alt="" />
+        <StaticImage
+          src="../images/necklace.jpeg"
+          className="object-cover h-48 md:h-[50rem]"
+          alt=""
+        />
       </div>
     </div>
   </div>

@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         "primary-dark": "#393939",
+        "gold": "#928269"
       },
       fontFamily: {
         raleway: ["'Raleway'", "sans-serif"],

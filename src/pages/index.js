@@ -16,14 +16,15 @@ const IndexPage = () => (
       />
     </Helmet>
     <Navbar />
-    <div className="home grid grid-cols-2 h-screen">
-      <div className="text flex justify-start items-center p-4">
-        <h1 className="text-6xl font-bold font-playfair tracking-tighter">
+    <div className="home grid grid-cols-1 md:grid-cols-2 grid-rows-1">
+      <div className="text flex justify-center flex-col items-start h-[48rem] pl-4 order-2 md:order-1">
+        <h1 className="text-8xl font-bold font-playfair tracking-tighter">
           Descubre tu nuevo accesorio favorito
         </h1>
+        <h2 className="font-raleway text-3xl">Nueva colección</h2>
       </div>
-      <div className="image">
-        <StaticImage src="../images/necklace.jpeg" className="object-cover" alt="" />
+      <div className="image relative order-1 md:order-2">
+        <StaticImage src="../images/necklace.jpeg" className="object-cover h-48 md:h-[50rem]" alt="" />
       </div>
     </div>
   </div>

@@ -13,6 +13,9 @@ module.exports = {
         raleway: ["'Raleway'", "sans-serif"],
         playfair: ["'Playfair Display'", "serif"],
       },
+      spacing: {
+        128: "32rem",
+      },
     },
   },
 }

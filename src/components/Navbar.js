@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Navbar = () => {
   return (
@@ -20,12 +21,12 @@ const Navbar = () => {
         </svg>
       </div>
       <h1 className="font-raleway font-bold text-2xl w-1/2 text-center">
-        Verbena Joyería
+        <Link to="/">Verbena Joyería</Link>
       </h1>
       <div className="options w-1/3">
         <ul className="flex items-center justify-end gap-6">
           <li>
-            <a href="/productos">Productos</a>
+            <Link href="/productos">Productos</Link>
           </li>
         </ul>
       </div>

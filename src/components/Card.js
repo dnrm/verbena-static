@@ -7,7 +7,7 @@ const Card = ({ name, price, description, src }) => {
       <img src={src} alt="" className="h-[18em] object-cover" />
       <div className="texts">
         <h1 className="underline p-0 text-4xl font-playfair font-bold tracking-tighter">
-          <Link to={`/${name.toLowerCase().split(' ').join('-')}`}>{name}</Link>
+          <Link to={`/product/${name.toLowerCase().split(' ').join('-')}`}>{name}</Link>
         </h1>
         <p className="font-mono text-xl pt-2">${price}</p>
       </div>
